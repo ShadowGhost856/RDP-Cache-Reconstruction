@@ -38,6 +38,7 @@ python rdp_cache_reconstruct.py Cache0000.bin --out ./rdp_output --top 60
 step 4 (optional)
 use the smart assembler
 python asm_build.py ./rdp_output/tiles  -o assembler_smart.html
+
 ---
 
 ## Table of contents
