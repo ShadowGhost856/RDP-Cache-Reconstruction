@@ -21,23 +21,23 @@ by the machine.
 
 ---
 ## TL;DR
-step 1:
-find “Cache0000.bin”, “Cache0001.bin”, etc in mounted triage image (.vhdx image)
-C:\Users\<USER>\AppData\Local\Microsoft\Terminal Server Client\Cache\
+step 1:  
+find “Cache0000.bin”, “Cache0001.bin”, etc in mounted triage image (.vhdx image)  
+C:\Users\<USER>\AppData\Local\Microsoft\Terminal Server Client\Cache\  
 
-step 2:
-pip install Pillow numpy
-pip install pytesseract
-git clone https://github.com/ANSSI-FR/bmc-tools.git
-cp bmc-tools/bmc-tools.py .
+step 2:  
+pip install Pillow numpy  
+pip install pytesseract  
+git clone https://github.com/ANSSI-FR/bmc-tools.git  
+cp bmc-tools/bmc-tools.py .  
 
-step 3:
-use rdp_cache_reconstruct.py
-python rdp_cache_reconstruct.py Cache0000.bin --out ./rdp_output --top 60
+step 3:  
+use rdp_cache_reconstruct.py  
+python rdp_cache_reconstruct.py Cache0000.bin --out ./rdp_output --top 60  
 
-step 4 (optional)
-use the smart assembler
-python asm_build.py ./rdp_output/tiles  -o assembler_smart.html
+step 4 (optional)  
+use the smart assembler  
+python asm_build.py ./rdp_output/tiles  -o assembler_smart.html  
 
 ---
 
