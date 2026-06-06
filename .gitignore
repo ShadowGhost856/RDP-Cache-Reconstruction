@@ -1,0 +1,48 @@
+# ─── Evidence / case data — NEVER commit ──────────────────────────
+# RDP bitmap cache inputs and anything reconstructed from them may
+# contain sensitive evidence. Keep all of it out of version control.
+*.bin
+*.bmc
+Cache*.bin
+bcache*.bmc
+rdp_output/
+output/
+*_out/
+en_test/
+en_full/
+en_v/
+viewer*.html
+assembler*.html
+transcript*.txt
+*.vhdx
+*.E01
+*.dd
+*.raw
+
+# ─── Generated build artifacts from the assembler scripts ─────────
+asm_cache.pkl
+asm_R.pkl
+*.pkl
+
+# ─── Third-party tool (cloned separately, GPL — do not vendor) ────
+bmc-tools/
+
+# ─── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+
+# ─── OS / editor cruft ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
